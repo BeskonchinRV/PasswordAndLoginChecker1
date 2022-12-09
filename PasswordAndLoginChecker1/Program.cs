@@ -1,33 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace PasswordAndLoginChecker1;
-   
 while (true)
 {
     Console.WriteLine("Введите логин:");
     string login = Console.ReadLine().Trim();
-Console.WriteLine("Введите пароль \n(Должен содержать минимум одну заглавную букву,\n одну цифру и специальные символы, например '_','(' или ')'):");
+    Console.WriteLine("Введите пароль \n(Должен содержать минимум одну заглавную букву,\n одну цифру и специальные символы, например '_','(' или ')'):");
     string password = Console.ReadLine().Trim();
     if (isLoginSuitable(login))
     {
         Console.WriteLine("Логин подходит");
     }
     else
-{
-    Console.WriteLine("Логин не подходит");
-}
-if (isPasswordSuitable(password))
-{
-    Console.WriteLine("Пароль подходит");
-}
-else
-{
-    Console.WriteLine("Пароль не подходит");
-}
+    {
+        Console.WriteLine("Логин не подходит");
+    }
+    if (isPasswordSuitable(password))
+    {
+        Console.WriteLine("Пароль подходит");
+    }
+    else
+    {
+       Console.WriteLine("Пароль не подходит");
+    }
     
 }
 
